@@ -1,1 +1,40 @@
-{     "devDependencies": {         "hogan-express": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-hogan-express",     "homepage": "https://github.com/npmtest/node-npmtest-hogan-express",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-hogan-express.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [hogan-express (v0.5.2)](https://github.com/vol4ok/hogan-express) [![npm package](https://img.shields.io/npm/v/npmtest-hogan-express.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-hogan-express) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-hogan-express.svg)](https://travis-ci.org/npmtest/node-npmtest-hogan-express)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "hogan-express": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-hogan-express",
+    "keywords": [
+        "coverage",
+        "test",
+        "hogan-express"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_hogan_express.js",
+    "name": "npmtest-hogan-express",
+    "nameAlias": "npmtest_hogan_express",
+    "nameOriginal": "npmtest-hogan-express",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-hogan-express.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
