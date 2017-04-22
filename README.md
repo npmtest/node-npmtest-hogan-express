@@ -1,4 +1,7 @@
-# test coverage for  [hogan-express (v0.5.2)](https://github.com/vol4ok/hogan-express)  [![npm package](https://img.shields.io/npm/v/npmtest-hogan-express.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-hogan-express) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-hogan-express.svg)](https://travis-ci.org/npmtest/node-npmtest-hogan-express)
+# npmtest-hogan-express
+
+#### basic test coverage for  [hogan-express (v0.5.2)](https://github.com/vol4ok/hogan-express)  [![npm package](https://img.shields.io/npm/v/npmtest-hogan-express.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-hogan-express) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-hogan-express.svg)](https://travis-ci.org/npmtest/node-npmtest-hogan-express)
+
 #### Mustache template engine for express 3.x. Support partials and layout
 
 [![NPM](https://nodei.co/npm/hogan-express.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/hogan-express)
@@ -80,7 +83,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "version": "0.5.2"
+    "version": "0.5.2",
+    "bin": {}
 }
 ```
 
